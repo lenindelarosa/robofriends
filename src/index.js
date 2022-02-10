@@ -1,9 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider, connect } from 'react-redux';
+import { createStore } from 'redux';
 import './index.css';
 import 'tachyons';
 import App from './containers/App.js';
 // import reportWebVitals from './reportWebVitals';
+
+const store = createStore(rootReducer);
 
 ReactDOM.render(
   <React.StrictMode>
